@@ -26,4 +26,4 @@ $ catkin_make
 4. 実行    
 $ rosrun uvc_camera uvc_single_stereo_node    
 or    
-$ roslaunch uvc_camera single_stereo_node.launch    
+$ roslaunch uvc_camera single_stereo_node.launch  --screen    
