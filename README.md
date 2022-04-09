@@ -5,6 +5,7 @@ Single USB Stereo Camera (HBV-1780-2 S2.0) が、 uvc_camera で
     開発環境    
     ubuntu mate 18.04    
     ros: melodic    
+    camera: HBV-1780-2 S2.0    
     
 ビルド方法。    
 1. original の uvc_camera を git clone します。    
