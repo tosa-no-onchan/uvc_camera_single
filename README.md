@@ -1,6 +1,10 @@
 # uvc_camera_single    
 Single USB Stereo Camera (HBV-1780-2 S2.0) が、 uvc_camera で    
-使える様に、プログラムを追加しました。    
+使える様に、プログラムを追加しました。   
+    
+    開発環境    
+    ubuntu mate 18.04    
+    ros: melodic    
     
 ビルド方法。    
 1. original の uvc_camera を git clone します。    
