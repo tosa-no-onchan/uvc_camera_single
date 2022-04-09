@@ -29,3 +29,8 @@ $ catkin_make
     $ rosrun uvc_camera uvc_single_stereo_node    
     or    
     $ roslaunch uvc_camera single_stereo_node.launch  --screen    
+    
+製造元へのお願い!!    
+    
+    About stereo frame layout of HBV-1780-2 S2.0.    
+    If possible, arrange the captioned image frames vertically rather than horizontally.    
