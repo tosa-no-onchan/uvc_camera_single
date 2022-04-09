@@ -23,7 +23,8 @@ $ copy -rf ./* ~/catkin_ws/src/uvc_camera
 $ cd ~/catkin_ws    
 $ catkin_make    
     
-4. 実行    
-$ rosrun uvc_camera uvc_single_stereo_node    
-or    
-$ roslaunch uvc_camera single_stereo_node.launch  --screen    
+実行    
+    
+    $ rosrun uvc_camera uvc_single_stereo_node    
+    or    
+    $ roslaunch uvc_camera single_stereo_node.launch  --screen    
