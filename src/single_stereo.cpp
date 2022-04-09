@@ -235,22 +235,22 @@ void Single_StereoCamera::feedImages() {
         image_left->data.resize(image_left->step * image_left->height);
         image_right->data.resize(image_right->step * image_right->height);
 
-        if (rotate_left){
+        //if (rotate_left){
           // not support
-          rotate(&image_left->data[0], frame_left, width * height);
-        }
-        else{
+          //rotate(&image_left->data[0], frame_left, width * height);
+        //}
+        //else{
           // 左右横に並んでいます。
           //memcpy(&image_left->data[0], frame_left, width * height * 3);
           copy_frame(&image_left->data[0],&image_right->data[0],frame_left,width,height);
-        }
-        if (rotate_right){
+        //}
+        //if (rotate_right){
           // not support
           //rotate(&image_right->data[0], frame_right, width * height);
-        }
-        else{
+        //}
+        //else{
           //memcpy(&image_right->data[0], frame_right, width * height * 3);
-        }
+        //}
         left_pub.publish(image_left);
         right_pub.publish(image_right);
         sendInfo(capture_time);
@@ -271,14 +271,14 @@ void Single_StereoCamera::feedImages() {
 }
 
 void Single_StereoCamera::copy_frame(unsigned char *left,unsigned char *right,unsigned char *frame,int width,  int height) {
-  int d_ptr=0;
-  int s_ptr=0;
   int step = width * 3;
   for(int i=0;i<height;i++){
-    memcpy(&left[d_ptr], &frame[s_ptr], step);
-    memcpy(&right[d_ptr], &frame[s_ptr+step], step);
-    d_ptr += step;
-    s_ptr += step * 2;
+    memcpy(left, frame, step);
+    frame += step;
+    left += step;
+    memcpy(right, frame, step);
+    frame += step;
+    right += step;
   }
 }
 
