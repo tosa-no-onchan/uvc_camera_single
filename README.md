@@ -35,3 +35,8 @@ $ catkin_make
     About stereo frame layout of HBV-1780-2 S2.0.    
     If possible, arrange the captioned image frames vertically rather than horizontally.    
     Then, programing for sepatete each left frame and right frame will become more easy.    
+    
+キャリブレーション    
+    
+キャリブレーションは、[ROS rtabmap_ros 自作 Stereo Camera ](http://www.netosa.com/blog/2021/09/ros-rtabmap-ros-stereo-camera.html)    
+    
