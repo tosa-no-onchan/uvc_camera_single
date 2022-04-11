@@ -42,3 +42,7 @@ $ catkin_make
     
 キャリブレーションは、[ROS rtabmap_ros 自作 Stereo Camera ](http://www.netosa.com/blog/2021/09/ros-rtabmap-ros-stereo-camera.html)    
     
+Updates    
+
+    2022.4.11 nodelet 版追加しました。 by nishi    
+    
