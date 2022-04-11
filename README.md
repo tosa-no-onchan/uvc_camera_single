@@ -29,6 +29,8 @@ $ catkin_make
     $ rosrun uvc_camera uvc_single_stereo_node    
     or    
     $ roslaunch uvc_camera single_stereo_node.launch  --screen    
+    nodelet    
+    $ roslaunch uvc_camera single_stereo_nodelet.launch    
     
 製造元へのお願い!!    
     
